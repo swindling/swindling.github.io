@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="main.css">
-    <style>
+     <style>
         /* Additional CSS for centering the logo */
         header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
             text-align: center; /* Aligns contents (including inline elements like <a>) to center */
+            z-index: 1000; /* Ensure it's above other content */
+            padding: 10px 0; /* Adjust padding as needed */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
         }
         header a {
             display: inline-block; /* Ensures the <a> element respects width and height settings */
+        }
+        /* Adjust content padding to prevent it from hiding behind fixed header */
+        body {
+            padding-top: 80px; /* Adjust according to your header height */
+            /* Optionally, add more padding if needed for other elements */
+            margin: 0; /* Ensure no default margin */
         }
     </style>
 </head>
