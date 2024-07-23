@@ -10,6 +10,7 @@
         header {
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
             background-color: #ffffff;
             text-align: center; /* Aligns contents (including inline elements like <a>) to center */
@@ -20,12 +21,12 @@
         header .logo {
             display: inline-block; /* Ensures the logo respects width and height settings */
             vertical-align: middle; /* Aligns the logo vertically */
+            margin-left: auto; /* Pushes logo to the left edge of the center */
+            margin-right: auto; /* Pushes logo to the right edge of the center */
         }
         header nav {
             display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
+            float: right; /* Aligns navigation links to the right */
         }
         header nav ul {
             list-style-type: none;
@@ -77,6 +78,7 @@
 
 <div class="main-content">
     <h1>Welcome to My Website</h1>
+    <p>This is a simple HTML page.</p>
     <p>This is a simple HTML page.</p>
     <p>This is a simple HTML page.</p>
     <p>This is a simple HTML page.</p>
