@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="main.css">
-     <style>
-        /* Additional CSS for centering the logo */
+    <style>
+        /* Additional CSS for centering the logo and adjusting navigation */
         header {
             position: fixed;
             top: 0;
@@ -17,13 +17,32 @@
             padding: 10px 0; /* Adjust padding as needed */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
         }
-        header a {
-            display: inline-block; /* Ensures the <a> element respects width and height settings */
+        header .logo {
+            display: inline-block; /* Ensures the logo respects width and height settings */
+            vertical-align: middle; /* Aligns the logo vertically */
+        }
+        header nav {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
         }
         /* Adjust content padding to prevent it from hiding behind fixed header */
         body {
-            padding-top: 80px; /* Adjust according to your header height */
-            /* Optionally, add more padding if needed for other elements */
+            padding-top: 100px; /* Adjust according to your header height */
             margin: 0; /* Ensure no default margin */
         }
         footer {
@@ -32,22 +51,33 @@
             text-align: center;
             padding: 10px 0; /* Adjust padding as needed */
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow at the top */
+            position: fixed;
+            bottom: 0;
+        }
+        /* Styling for the main content area */
+        .main-content {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="zblack_logo 2.png" alt="Logo" style="width: 180px; height: auto;">
-        </a>
-        <nav>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="zblack_logo 2.png" alt="Logo" style="width: 180px; height: auto;">
+    </a>
+    <nav>
         <ul>
             <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Woman</a></li>
+            <li><a href="women.html">Women</a></li>
         </ul>
     </nav>
-    </header>
+</header>
+
+<div class="main-content">
     <h1>Welcome to My Website</h1>
+    <p>This is a simple HTML page.</p>
     <p>This is a simple HTML page.</p>
     <p>This is a simple HTML page.</p>
     <p>This is a simple HTML page.</p>
