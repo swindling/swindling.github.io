@@ -6,6 +6,7 @@
 	Road Trip by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+height: auto;
 */
 
 /* Reset */
@@ -20,7 +21,7 @@
 	}
 .image.fit img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
