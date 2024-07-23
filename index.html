@@ -21,12 +21,10 @@
         header .logo {
             display: inline-block; /* Ensures the logo respects width and height settings */
             vertical-align: middle; /* Aligns the logo vertically */
-            margin-left: auto; /* Pushes logo to the left edge of the center */
-            margin-right: auto; /* Pushes logo to the right edge of the center */
         }
         header nav {
-            display: inline-block;
             float: right; /* Aligns navigation links to the right */
+            margin-top: 10px; /* Optional: Adds some space between logo and navigation */
         }
         header nav ul {
             list-style-type: none;
@@ -34,12 +32,19 @@
             padding: 0;
         }
         header nav ul li {
-            display: inline;
-            margin: 0 10px;
+            display: inline-block; /* Display navigation items inline */
+            margin-left: 10px; /* Adjust spacing between navigation items */
         }
         header nav ul li a {
             text-decoration: none;
             color: #333;
+            padding: 8px 12px; /* Add padding for better click/tap area */
+            border-radius: 4px; /* Optional: Rounded corners for buttons */
+            background-color: #007bff; /* Optional: Button background color */
+            color: #ffffff; /* Optional: Button text color */
+        }
+        header nav ul li a:hover {
+            background-color: #0056b3; /* Optional: Hover background color */
         }
         /* Adjust content padding to prevent it from hiding behind fixed header */
         body {
