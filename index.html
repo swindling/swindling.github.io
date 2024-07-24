@@ -6,63 +6,63 @@
     <title>My Website</title>
     <link rel="stylesheet" href="main.css">
     <style>
-        /* Additional CSS for centering the logo and adjusting navigation */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            text-align: center; /* Aligns contents (including inline elements like <a>) to center */
-            z-index: 1000; /* Ensure it's above other content */
-            padding: 10px 0; /* Adjust padding as needed */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
-        }
-        header .logo {
-            display: inline-block; /* Ensures the logo respects width and height settings */
-            vertical-align: middle; /* Aligns the logo vertically */
-        }
-        header nav {
-            float: right; /* Aligns navigation links to the right */
-            margin-top: 10px; /* Optional: Adds some space between logo and navigation */
-        }
-        header nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        header nav ul li {
-            display: inline-block; /* Display navigation items inline */
-            margin-left: 10px; /* Adjust spacing between navigation items */
-        }
-        header nav ul li a {
-            text-decoration: none;
-            color: #333;
-            padding: 8px 12px; /* Add padding for better click/tap area */
-            border-radius: 4px; /* Optional: Rounded corners for buttons */
-            background-color: #007bff; /* Optional: Button background color */
-            color: #ffffff; /* Optional: Button text color */
-        }
-        header nav ul li a:hover {
-            background-color: #0056b3; /* Optional: Hover background color */
-        }
-        /* Adjust content padding to prevent it from hiding behind fixed header */
-        body {
-            padding-top: 100px; /* Adjust according to your header height */
-            margin: 0; /* Ensure no default margin */
-        }
-        footer {
-            width: 100%;
-            background-color: #f0f0f0; /* Light gray background */
-            text-align: center;
-            padding: 10px 0; /* Adjust padding as needed */
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow at the top */
-        }
-        /* Styling for the main content area */
-        .main-content {
-            padding: 20px;
-            text-align: center;
-        }
+    /* Additional CSS for centering the logo and adjusting navigation */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center; /* Aligns contents (including inline elements like <a>) to center */
+        z-index: 1000; /* Ensure it's above other content */
+        padding: 10px 0; /* Adjust padding as needed */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+    }
+    header .logo {
+        display: block; /* Ensures the logo respects width and height settings */
+        margin: 0 auto; /* Centers the logo horizontally */
+    }
+    header nav {
+        float: right; /* Aligns navigation links to the right */
+        margin-top: 10px; /* Optional: Adds some space between logo and navigation */
+    }
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        display: inline-block; /* Display navigation items inline */
+        margin-left: 10px; /* Adjust spacing between navigation items */
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 8px 12px; /* Add padding for better click/tap area */
+        border-radius: 4px; /* Optional: Rounded corners for buttons */
+        background-color: #007bff; /* Optional: Button background color */
+        color: #ffffff; /* Optional: Button text color */
+    }
+    header nav ul li a:hover {
+        background-color: #0056b3; /* Optional: Hover background color */
+    }
+    /* Adjust content padding to prevent it from hiding behind fixed header */
+    body {
+        padding-top: 100px; /* Adjust according to your header height */
+        margin: 0; /* Ensure no default margin */
+    }
+    footer {
+        width: 100%;
+        background-color: #f0f0f0; /* Light gray background */
+        text-align: center;
+        padding: 10px 0; /* Adjust padding as needed */
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow at the top */
+    }
+    /* Styling for the main content area */
+    .main-content {
+        padding: 20px;
+        text-align: center;
+    }
     </style>
 </head>
 <body>
