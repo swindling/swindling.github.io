@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+    /* Additional CSS for centering the logo and adjusting navigation */
+    body {
+        margin: 0; /* Remove default margin */
+        font-family: Arial, sans-serif; /* Optional: Define a font family */
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex; /* Use flexbox for easier alignment */
+        justify-content: space-between; /* Distribute items evenly */
+        align-items: center; /* Center items vertically */
+    }
+    header .logo {
+        display: block;
+        margin: 0 auto; /* Centers the logo horizontally */
+        /*transform: translateX(60px); /*centers logo*/
+        margin-left: 40px; /* Moves the logo to the right */
+    }
+    header nav {
+        margin-right: 0px; /* Optional: Adjust spacing between logo and nav */
+    }
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Use flexbox for inline list items */
+    }
+    header nav ul li {
+        margin-left: 10px; /* Adjust spacing between navigation items */
+    }
+    header nav ul li:first-child {
+        margin-left: 0; /* Remove margin for the first navigation item */
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 8px 12px; /* Add padding for better click/tap area */
+        border-radius: 4px; /* Optional: Rounded corners for buttons */
+        background-color: #007bff; /* Optional: Button background color */
+        color: #ffffff; /* Optional: Button text color */
+    }
+    header nav ul li a:hover {
+        background-color: #0056b3; /* Optional: Hover background color */
+    }
+    /* Adjust content padding to prevent it from hiding behind fixed header */
+    .main-content {
+        padding: 20px;
+        text-align: center;
+        margin-top: 100px; /* Adjust according to your header height */
+    }
+    footer {
+        width: 100%;
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+</head>
+<body>
 
+<header>
+    <a href="index.html" class="logo">
+        <img src="zblack_logo 2.png" alt="Logo" style="width: 180px; height: auto;">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-content">
+    <h1>Men</h1>
+
+    <footer>
+        <p>&copy; 2024 Kālepa. All rights reserved.</p>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+
+   
+</body>
+</html>
