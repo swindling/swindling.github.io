@@ -122,6 +122,24 @@
         .poppins-font {
             font-family: 'Poppins', sans-serif;
     }
+    .button {
+        position: absolute;
+        bottom: 20px; /* Distance from the bottom of the container */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        padding: 10px 20px;
+        background-color: #007bff; /* Button background color */
+        color: #ffffff; /* Button text color */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .button:hover {
+        background-color: #0056b3; /* Button hover background color */
+    }
     </style>
 </head>
 <body>
@@ -145,6 +163,7 @@
         <div class="overlay-text">
             <h1>Shop Durable T-Shirts</h1>
             <p>Made from Sustainably Sourced Hemp</p>
+            <a href="#" class="button">Shop T-Shirts</a>
         </div>
     </div>
 
