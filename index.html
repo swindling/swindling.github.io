@@ -94,30 +94,31 @@
         position: relative; /* Ensure it's positioned relative to the normal flow */
     }
 
-    .full-width-image {
+    .image-container {
         position: relative;
-        width: 100vw; /* Ensure the image spans the full viewport width */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Remove extra space below the image */
-        margin: 0; /* Remove any extra margin */
-        padding: 0; /* Remove any extra padding */
-        object-fit: cover; /* Ensure the image covers the container without distortion */
-    }
-    .overlay-text {
-        position: absolute;
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Center the text */
-        color: #ffffff; /* Text color */
-        text-align: center; /* Center the text */
-        padding: 20px; /* Padding around the text */
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
-        border-radius: 8px; /* Optional: Rounded corners for the background */
+        width: 100vw;
+        height: 400px; /* Fixed height for testing */
+        overflow: hidden;
     }
 
-    .overlay-text h1, .overlay-text p {
-        margin: 0; /* Remove default margins */
+    .full-width-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        z-index: 10;
+        }
 
     </style>
 </head>
