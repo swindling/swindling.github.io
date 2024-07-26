@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="main.css">
     <style>
     /* Additional CSS for centering the logo and adjusting navigation */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
     body {
-        margin: 0; /* Remove default margin */
         font-family: Arial, sans-serif; /* Optional: Define a font family */
-    }
+}
     header {
         position: fixed;
         top: 0;
@@ -86,7 +92,6 @@
         width: 100vw;
         height: auto;
         display: block;
-        margin-left: auto;
     }
     </style>
 </head>
