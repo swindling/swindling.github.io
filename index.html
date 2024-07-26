@@ -102,6 +102,21 @@
         padding: 0; /* Remove any extra padding */
         object-fit: cover; /* Ensure the image covers the container without distortion */
     }
+    .overlay-text {
+        position: absolute; /* Position the text absolutely within the container */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center the text */
+        color: #ffffff; /* Text color */
+        text-align: center; /* Center the text */
+        padding: 20px; /* Padding around the text */
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+        border-radius: 8px; /* Optional: Rounded corners for the background */
+    }
+
+    .overlay-text h1, .overlay-text p {
+        margin: 0; /* Remove default margins */
+    }
 
     </style>
 </head>
@@ -123,6 +138,10 @@
 
     <div class="image-container">
         <img src="d2.png" alt="image" class="full-width-image">
+        <div class="overlay-text">
+            <h1>Your Text Here</h1>
+            <p>Additional description or content</p>
+        </div>
     </div>
     
     <h1>Welcome to My Website</h1>
