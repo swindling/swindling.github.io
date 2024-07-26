@@ -89,9 +89,12 @@
         box-sizing: border-box; /* Include padding and border in width/height */
     }
     .full-width-image {
-        width: 100vw;
+        width: 100%;
         height: auto;
         display: block;
+        margin: 0; /* Ensure no margin around the image */
+        padding: 0; /* Ensure no padding around the image */
+        object-fit: cover; /* Ensure the image covers the container */
     }
     </style>
 </head>
