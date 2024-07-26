@@ -93,6 +93,10 @@
         position: relative; /* Ensure it's positioned relative to the normal flow */
         box-sizing: border-box; /* Include padding and border in width/height */
     }
+    .image-container {
+        width: 100%;
+        overflow: hidden; /* Hide any overflow */
+    }
     .full-width-image {
         width: 100%;
         height: auto;
@@ -119,7 +123,10 @@
 
 <div class="main-content">
 
-    <img src="d2.png" alt="image" class="full-width-image">
+    <div class="image-container">
+        <img src="d2.png" alt="image" class="full-width-image">
+    </div>
+    
     <h1>Welcome to My Website</h1>
     
     <p>This is a simple HTML page.</p>
