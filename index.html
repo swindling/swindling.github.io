@@ -9,22 +9,21 @@
     <title>Kālepa</title>
     <link rel="stylesheet" href="main.css">
     <style>
-    /* Additional CSS for centering the logo and adjusting navigation */
+    /* Reset default margin and padding for all elements */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box; /* Include padding and border in the element's width and height */
-}
+    }    
+
     body, html {
         margin: 0;
         padding: 0;
         width: 100%;
+        height: 100%;
         overflow-x: hidden; /* Prevent horizontal overflow */
-}
+    }
 
-    body {
-        font-family: Arial, sans-serif; /* Optional: Define a font family */
-}
     header {
         position: fixed;
         top: 0;
@@ -39,29 +38,28 @@
         justify-content: space-between; /* Distribute items evenly */
         align-items: center; /* Center items vertically */
     }
+
     header .logo {
         display: block;
-        margin: 0 auto; /* Centers the logo horizontally */
-        /*transform: translateX(60px); /*centers logo*/
         margin-left: 40px; /* Moves the logo to the right */
     }
+
     header nav {
-        margin-right: 0px; /* Optional: Adjust spacing between logo and nav */
+        margin-right: 0; /* Adjust spacing between logo and nav */
     }
+
     header nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex; /* Use flexbox for inline list items */
         margin-left: auto; /* Moves the navigation links to the right */
-        margin-right: 980px; /* Adjust the right margin to control the spacing */
     }
+
     header nav ul li {
         margin-left: 0; /* Adjust spacing between navigation items */
     }
-    header nav ul li:first-child {
-        margin-left: 0; /* Remove margin for the first navigation item */
-    }
+
     header nav ul li a {
         text-decoration: none;
         color: #333;
@@ -73,17 +71,19 @@
         margin-left: 10px; /* Adjust spacing between buttons */
         font-family: 'Poppins', sans-serif;
     }
+
     header nav ul li a:hover {
         background-color: #c3c3c3; /* Optional: Hover background color */
     }
-    /* Adjust content padding to prevent it from hiding behind fixed header */
+
     .main-content {
-        padding: 20px;
-        text-align: center;
+        padding: 0; /* Remove any padding */
         margin-top: 100px; /* Adjust according to your header height */
+        overflow: hidden; /* Hide overflow to prevent white space */
     }
+
     footer {
-        width: 101%; /* Ensure the footer spans the full width of the viewport */
+        width: 100%; /* Ensure the footer spans the full width of the viewport */
         background-color: #f0f0f0;
         text-align: center;
         padding: 40px 20px; /* Increase padding for a larger footer height */
@@ -91,26 +91,17 @@
         font-size: 18px; /* Adjust font size if needed */
         margin: 0; /* Remove margin to ensure full width */
         position: relative; /* Ensure it's positioned relative to the normal flow */
-        box-sizing: border-box; /* Include padding and border in width/height */
     }
+
     .full-width-image {
-        border: 2px solid red; /* Debugging border */
+        width: 100vw; /* Ensure the image spans the full viewport width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove extra space below the image */
+        margin: 0; /* Remove any extra margin */
+        padding: 0; /* Remove any extra padding */
+        object-fit: cover; /* Ensure the image covers the container without distortion */
     }
-    .main-content {
-        border: 2px solid blue; /* Debugging border */
-    }
-    /*.image-container {
-        width: 100%;
-        overflow: hidden; /* Hide any overflow */
-    /*}
-    .full-width-image {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0; /* Ensure no margin around the image */
-     /*   padding: 0; /* Ensure no padding around the image */
-      /*  object-fit: cover; /*Ensure the image covers the container*/
-    /*}*/
+
     </style>
 </head>
 <body>
