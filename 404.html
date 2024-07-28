@@ -147,29 +147,32 @@
     .center {
         text-align: center;
     }
-    .cart {
+    /* Styling for the container around the cart icon */
+    .cart-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px; /* Set width and height to make the circle */
-        height: 50px;
-        border-radius: 50%; /* Make it circular */
-        border: 2px solid transparent; /* Border color when not hovered */
-        margin-left: auto; /* Pushes the cart icon to the right */
-        margin-right: 50px; /* Adjust as needed to position it properly */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        width: 60px; /* Width of the circular border */
+        height: 60px; /* Height of the circular border */
+        border-radius: 50%; /* Makes the border circular */
+        border: 2px solid #000000; /* Color and width of the border */
+        background-color: #ffffff; /* Background color for the circle */
         transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+        margin-right: 50px; /* Adjust the margin if needed */
     }
 
-    .cart:hover {
+    /* Hover effect for the container */
+    .cart-container:hover {
         background-color: #c3c3c3; /* Background color on hover */
         border-color: #c3c3c3; /* Border color on hover */
     }
 
+    /* Styling for the cart icon itself */
     .cart img {
-        width: 40px; /* Ensure the cart icon fits within the circle */
-        height: auto;
-        object-fit: contain; /* Preserve the aspect ratio of the SVG */
+        width: 40px; /* Width of the icon */
+        height: 40px; /* Height of the icon to fit inside the circle */
     }
+
     </style>
 </head>
 <body>
@@ -184,9 +187,10 @@
             <li><a href="explore.html">Explore</a></li>
         </ul>
     </nav>
-    <a href="cart.html" class="cart">
-        <img src = "carty-cropped.svg" alt="Cart" style= "width: 40px; height: auto;">
-    </a>
+    <div class="cart-container">
+        <a href="cart.html" class="cart">
+            <img src="carty-cropped.svg" alt="Cart">
+        </a>
 </header>
 
 
