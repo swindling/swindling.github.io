@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kālepa</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Untitled-2.ico" type="image/x-icon">
+    <style>
+    /* Reset default margin and padding for all elements */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Include padding and border in the element's width and height */
+    }    
 
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex; /* Use flexbox for easier alignment */
+        justify-content: space-between; /* Distribute items evenly */
+        align-items: center; /* Center items vertically */
+    }
+
+    header .logo {
+        display: block;
+        margin-left: 40px; /* Moves the logo to the right */
+    }
+
+    header nav {
+        margin-right: 0; /* Adjust spacing between logo and nav */
+    }
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Use flexbox for inline list items */
+        margin-left: 40px; /* Moves the navigation links to the right */
+        /*margin-right: 980px; /* Adjust the right margin to control the spacing */
+    }
+
+    header nav ul li {
+        margin-left: 0; /* Adjust spacing between navigation items */
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 26px 20px; /* Increase padding for larger button size */
+        border-radius: 4px; /* Optional: Rounded corners for buttons */
+        background-color: #ffffff; /* Optional: Button background color */
+        color: #000000; /* Optional: Button text color */
+        font-size: 16px; /* Increase font size for larger text */
+        margin-left: 10px; /* Adjust spacing between buttons */
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header nav ul li a:hover {
+        background-color: #c3c3c3; /* Optional: Hover background color */
+    }
+
+    .main-content {
+        padding: 0; /* Remove any padding */
+        margin-top: 0; /* Adjust according to your header height */
+        overflow: hidden; /* Hide overflow to prevent white space */
+    }
+
+    footer {
+        width: 100%; /* Ensure the footer spans the full width of the viewport */
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 40px 20px; /* Increase padding for a larger footer height */
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 18px; /* Adjust font size if needed */
+        margin: 0; /* Remove margin to ensure full width */
+        position: relative; /* Ensure it's positioned relative to the normal flow */
+    }
+
+    .image-container {
+        position: relative;
+        width: 100vw;
+        height: auto; /* Fixed height for testing */
+        overflow: hidden;
+    }
+
+    .full-width-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        text-align: center;
+        z-index: 10;
+        }
+    .poppins-font {
+        font-family: 'Poppins', sans-serif;
+    }
+    .button {
+        position: absolute;
+        top: 53%; /* Distance from the bottom of the container */
+        left: 14%;
+        transform: translateX(-50%, -50%); /* Center horizontally */
+        padding: 10px 20px;
+        background-color: #ffffff; /* Button background color */
+        color: #000000; /* Button text color */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 10;
+        border: 0px solid; /* Define the border style and width */
+        border-color: #000000; /* Apply a hex color */
+    }
+
+    .button:hover {
+        background-color: #c3c3c3; /* Button hover background color */
+    }
+    .feta-font {
+        font-family: 'Feta Sans Condensed', sans-serif;
+    }
+    .center {
+        text-align: center;
+    }
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Set width and height to make the circle */
+        height: 50px;
+        border-radius: 50%; /* Make it circular */
+        border: 2px solid transparent; /* Border color when not hovered */
+        margin-left: auto; /* Pushes the cart icon to the right */
+        margin-right: 50px; /* Adjust as needed to position it properly */
+        transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+    }
+
+    .cart:hover {
+        background-color: #c3c3c3; /* Background color on hover */
+        border-color: #c3c3c3; /* Border color on hover */
+    }
+
+    .cart img {
+        width: 40px; /* Ensure the cart icon fits within the circle */
+        height: auto;
+        object-fit: contain; /* Preserve the aspect ratio of the SVG */
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="zblack_logo 2.png" alt="Kālepa" style="width: 180px; height: auto;">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="explore.html">Explore</a></li>
+        </ul>
+    </nav>
+    <a href="cart.html" class="cart">
+        <img src = "carty-cropped.svg" alt="Cart" style= "width: 40px; height: auto;">
+    </a>
+</header>
+
+
+    <h1 class="poppins-font center">We Couldnt Find the Page You Were Looking for, Go to the Homepage Instead?</h1>
+    
+
+    <footer>
+        <p>&copy; 2024 Kālepa. All rights reserved.</p>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+
+   
+</body>
+</html>
