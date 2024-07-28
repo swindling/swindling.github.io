@@ -148,8 +148,27 @@
         text-align: center;
     }
     .cart {
-        margin-left: auto;
-        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Set width and height to make the circle */
+        height: 50px;
+        border-radius: 50%; /* Make it circular */
+        border: 2px solid transparent; /* Border color when not hovered */
+        margin-left: auto; /* Pushes the cart icon to the right */
+        margin-right: 50px; /* Adjust as needed to position it properly */
+        transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+    }
+
+    .cart:hover {
+        background-color: #c3c3c3; /* Background color on hover */
+        border-color: #c3c3c3; /* Border color on hover */
+    }
+
+    .cart img {
+        width: 40px; /* Ensure the cart icon fits within the circle */
+        height: auto;
+        border-radius: 50%; /* Optional: makes the icon circular if it's larger */
     }
     </style>
 </head>
